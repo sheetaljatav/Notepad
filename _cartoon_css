@@ -1,0 +1,98 @@
+    .side-art .cartoon-user-img {
+      width: min(128px, 11vw);
+      max-height: 150px;
+      object-fit: contain;
+      pointer-events: none;
+      filter: drop-shadow(4px 5px 0 color-mix(in srgb, var(--shadow-dark) 40%, transparent));
+      animation: sideBob 3.8s ease-in-out infinite;
+    }
+
+    .cartoon-strip .cartoon-user-img {
+      width: 46px;
+      max-height: 52px;
+    }
+
+    .cartoon-editor {
+      margin: 0.85rem 0 0.5rem;
+      padding: 0.55rem 0.7rem 0.65rem;
+      border: 2px dashed var(--dot-color);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--pink-light) 88%, white);
+    }
+
+    .cartoon-editor-summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: var(--accent);
+      font-size: 0.88rem;
+    }
+
+    .cartoon-editor-hint {
+      font-size: 0.72rem;
+      color: var(--meta-color);
+      margin: 0.4rem 0 0.55rem;
+      line-height: 1.35;
+    }
+
+    .cartoon-zone-block {
+      margin-bottom: 0.75rem;
+    }
+
+    .cartoon-zone-title {
+      font-size: 0.78rem;
+      color: var(--accent);
+      margin: 0 0 0.35rem;
+    }
+
+    .cartoon-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      padding: 0.3rem 0;
+      border-bottom: 1px dotted var(--dot-color);
+    }
+
+    .cartoon-row:last-of-type {
+      border-bottom: none;
+    }
+
+    .cartoon-thumb {
+      width: 52px;
+      height: 52px;
+      border: 2px solid var(--bevel-dark);
+      border-radius: 6px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .cartoon-thumb svg,
+    .cartoon-thumb img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .cartoon-row-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .cartoon-add-bar {
+      margin-top: 0.35rem;
+    }
+
+    .cartoon-editor-actions {
+      margin-top: 0.55rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .side-art .cartoon-user-img {
+        animation: none;
+      }
+    }
